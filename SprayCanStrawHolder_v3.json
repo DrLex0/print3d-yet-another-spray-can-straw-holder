@@ -1,0 +1,34 @@
+{
+    "parameterSets": {
+        "53mm can": {
+            "can_dia": "52.1",
+            "chamfer": "0.6",
+            "height": "8",
+            "opening_angle": "36",
+            "segments": "80",
+            "straw_dia": "2.3",
+            "thickness": "1.8"
+        },
+        "57mm can": {
+            "can_dia": "57",
+            "chamfer": "0.6",
+            "height": "8",
+            "opening_angle": "36",
+            "segments": "80",
+            "straw_dia": "2.3",
+            "thickness": "1.8"
+        },
+        "Kontakt Chemie Druckluft400ml": {
+            "can_dia": "66",
+            "chamfer": "yes",
+            "height": "16",
+            "opening_angle": "36",
+            "rounding": "0.8",
+            "segments": "80",
+            "straw_dia": "3.25",
+            "thickness": "1.3",
+            "type": "taped"
+        }
+    },
+    "fileFormatVersion": "1"
+}
