@@ -1,5 +1,5 @@
 /* Customizable Spray Can Straw Holder
- * By DrLex, v3.0 2019/12
+ * By DrLex, v3.1 2024/10
  * Thingiverse thing:1707976
  * Released under Creative Commons - Attribution license */
 
@@ -48,7 +48,7 @@ block_w = straw_dia + 3.5;
 block_x = block_w/2 - rounding;
 xtra_y = straw_dia < 2.6 ? 0 : (straw_dia-2.6)/2;
 block_y = outer_radius + 2.5 + straw_dia + xtra_y - rounding;
-straw_y = outer_radius + 1.0 + straw_dia;
+straw_y = outer_radius + 0.6 + straw_dia;
 
 if(type == "clamp") {
     difference() {
@@ -94,8 +94,8 @@ difference() {
     translate([0, -straw_y, -1]) {
         cylinder(h=height + 2, r=straw_r, $fn=32);
         linear_extrude(height + 2, convexity=4)
-            polygon([[0.2*straw_dia, straw_dia + 0.35], [0.26*straw_dia, 0.2*straw_dia], [straw_dia, -1.85*straw_dia],
-                    [-straw_dia, -1.85*straw_dia], [-0.26*straw_dia, 0.2*straw_dia], [-0.2*straw_dia, straw_dia + 0.35]]);
+            polygon([[0.2*straw_dia, straw_dia + 0.35], [0.26*straw_dia, 0], [straw_dia, -1.85*straw_dia],
+                    [-straw_dia, -1.85*straw_dia], [-0.26*straw_dia, 0], [-0.2*straw_dia, straw_dia + 0.35]]);
     }
 
     if(chamfer == "yes") {
